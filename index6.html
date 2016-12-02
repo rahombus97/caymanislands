@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <script src="js/jquery-2.2.2.js"></script>
+        <title>Request Info</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="navBarContainer">
+                <div class="logoContainer">
+                    <a href="index.html"><img src="images/tourism_logo.jpg" id="logoImage"></a> 
+                </div>
+                <div class="navLinksContainer">
+                    <ul>
+                         <a href="index2.html">
+                            <li>History</li>
+                        </a> 
+                        <a href="index3.html">
+                            <li>Hotels</li>
+                        </a>
+                        <a href="index4.html">
+                            <li>Destinations</li>
+                        </a>
+                        <a href="index5.html">
+                            <li>Restaurants</li>
+                        </a>
+                        <a href="index6.html">
+                            <li class="navClick">Request Info</li>
+                        </a>    
+                    </ul>
+                </div>
+            </div>
+            <div class="intro">
+                <img src="images/moreInfo.jpg" class="moreInfoPic">
+                <div class="introText">More Info</div>
+                <div class="introTextback"></div>
+            </div>
+    <div class="formContainer">        
+       <div class="form">     
+            <form> If you would like more information, please fill out the form below with your information and you will be contacted shortly!
+                <div class="forms">
+                    First Name: <input type="text" class="inputBox" required></input>
+                    Last Name: <input type="text" class="inputBox" required></input>
+                    Email: <input type="email" class="inputBox" required>
+                    Phone Number: <input type="tel" class="inputBox">
+                    Type of Info Requested: 
+                    <select name="options" class="inputBox" required>
+                        <option value="Traveling">Traveling</option>
+                        <option value="Timeshares">Timeshares</option>
+                        <option value="Cruises">Cruises</option>
+                        <option value="Hotels/Restaurants">Hotels/Restaurants</option>
+                        <option value="Destinations">Destinations</option>
+                    </select> 
+                    Travel Dates: <input type="week" name="week_year" class="inputBox">
+                    Questions/Comments: <textarea name="message" class="inputBox"></textarea>
+                    <input type="submit" value="Submit!" id="submit">
+                </div>
+          <script>
+            $(document).ready(function(){
+                $("#submit").click(function(){
+                        alert("Thank you!");         
+                                 })   
+            })               
+            </script>
+            </form> 
+        </div>    
+        <div class="infoGrid">
+            <img src="images/info1.jpg" class="infoPics">
+            <img src="images/info2.jpg" class="infoPics">
+            <img src="images/info3.jpg" class="infoPics">
+            <img src="images/info4.jpg" class="infoPics">
+        </div>
+     </div>                     
+</div>
+</body> 
+</html>

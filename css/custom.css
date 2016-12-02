@@ -1,0 +1,941 @@
+
+}
+/*
+This makes every page have not have any margin or padding and centers the entire web page in the center of the browser 
+*/
+body{
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+/*
+This is to allow the downloaded fonts to be on the webpage when it viewed on different computers.
+*/
+@font-face{
+    font-family: "Caribbean";
+    src: url("../fonts/Caribbean.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;    
+}
+
+@font-face{
+    font-family: "Lora";
+    src: url("../fonts/Lora-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+This is so every link on the webpage does not have any blue text or underline on it.
+*/
+a{
+    text-decoration: none;
+/*
+This is to specify the width and height of the entire webpage and to center the content again with "margin: auto". The content of the webpage also has a 20px padding on all sides expcet the top. The background color of the entire page is tan.
+*/    
+}
+.container{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+    background-color: tan;   
+}
+/*
+This give the logo at the top of the page a height of 55px, 40px of margin on the left, and a width of 200px.
+*/
+#logoImage{
+    height: 55px;
+    margin-left: 40px;
+    width: 200px;
+}
+/*
+This gives the navigation bar at the top a background color of lightblue, a height of 55px, a width of 1200px, and a padding of 5px on the top and bottom.
+*/
+#navBarContainer{
+    background-color: lightblue;
+    height: 55px;
+    width: 1200px;
+    padding: 5px 0px;
+}
+/*
+The "display" aligns the logo so it is in line with the navigation bar, there is 20px of padding on the left, vertically aligns the logo in the middle of its div, and gives a margin of 40px on the right and 20px on the left.
+*/
+.logoContainer{
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: middle;
+    margin: 0px 40px 0px 20px;
+}
+/*
+This aligns the navigation links in a vertical line for the menu to appear as such.
+*/
+.navLinksContainer{
+    display: inline-block;
+    float: none;  
+}
+/*
+This makes sure the "list" of navigation links does not have any dots or some other kind of listing type. There is no padding or margins around the entirety or the "list".
+*/
+.navLinksContainer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/*
+This gives each menu item a relative position to one another, displays them vertically, gives them a height of 55px, puts the text vertically in the midle of the box with a line height of 55px, a text color of antique white, a font family of Caribbean, no padding on top and 30px of padding on the right and left, a 2 outset border with a color fo steel blue.
+*/
+.navLinksContainer li{
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    line-height: 55px;
+    font-family: Caribbean;
+    padding: 0 30px;
+    border: 2px outset;
+    border-color: steelblue;
+    text-decoration: none;
+    color: #fff;
+}
+/*
+This gives the text that has the links in the nav bar a color of white and will not include any blue underline to show that it is a "link".
+*/
+.navLinksContainer li a{
+    color: #fff;
+    text-decoration: none;
+}
+/*
+When you hover over the nav bar links, the container will turn sky blue, the cursor will change to a pointer, the border will become a 2px inset and a cadet blue border.
+*/
+.navLinksContainer li:hover{
+    background-color: skyblue;
+    cursor: pointer;
+    border: 2px inset;
+    border-color: cadetblue;
+}
+/*
+This gives the intro section relative positioning, a width of 1160px, height of 315px, a ridge border of 20px with a color of skyblue, and is aligned in the middle of the page with margin: auto.
+*/
+.intro{
+    position: relative;
+    width: 1160px;
+    height: 315px;
+    border: 20px ridge;
+    border-color: skyblue;
+    margin: auto;  
+}
+/*
+This gives this picture an absolute positioning, a width of 199px, a height of 311px, and a 2px solid border with  a tan color.
+*/
+#tree{
+    position: absolute;
+    width: 199px;
+    height: 311px;
+    border: 2px solid;
+    border-color: tan;
+}
+/*
+This gives this picture an absolute positioning, a width of 199px, a height of 311px, a margin of 959px on the left, and a 2px solid border with  a tan color.
+*/
+#drink{
+    position: absolute;
+    width: 199px;
+    height: 311px;
+    margin-left: 959px;
+    border: 2px solid;
+    border-color: tan;
+}
+/*
+This gives the div that contains the text on the video a width of 600px, aligns it in the center, a text color of antique white, font size of 30px, font family of Caribbean
+*/
+.welcome1{
+    width: 600px;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: Caribbean;
+    
+    /* This allows us to place elements exactly in the center of their container */
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*
+This gives the text to start of the mainpage content a font family of Caribbean, font size of 30px, all uppercase letters, a text color of antiquewhite, padding of 10px on all sides, a 2px outset border with a color of antique white, relative positioning, a margin of -450px on the top, 555px on the right, 0px on the bottom, and 10px on the left. There is also a black box shadow of 10px on the outside of the border and a width of 625px and aligns the text in the center of the div.
+*/
+.headerText{
+    font-family: Caribbean;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    padding: 10px;
+    border: 2px outset;
+    border-color: antiquewhite;
+    position: relative;
+    margin: -450px 555px 0px 10px;
+    box-shadow: 0 0 10px black;
+    width: 635px;
+    text-align: center;
+}
+/*
+This gives the body of text on the page page a font family of Lora, a 30px top margin, 490px right margin, 30px left margin, a text color of beige, and relative positioning. 
+*/
+.mainpageText {
+    font-family: Lora;
+    margin: 60px 490px 0px 30px;
+    color: beige;
+    position: relative;
+    font-size: 20px;
+}
+/*
+This gives the area of the slideshow relative positioning, a width of 500px, and a height of 332px. 
+*/
+.fadein { 
+    position:relative; 
+    width:500px; 
+    height:332px; 
+}
+/*
+This gives every image in the slideshow a position of absolute and a box shadow of 50px on the outside of the i 
+*/
+.fadein img { 
+    position:absolute; 
+    box-shadow: 0 0 50px black; 
+}
+/*
+This assigns a width of 450px, a height of 300px, a margin of -220px on the top, 740 px on the left, and relative positioning to all of the images in the slideshow.
+*/
+.photo{
+    width: 450px;
+    height: 300px;
+    margin: -220px 0px 0px 740px;
+    position: relative;
+}
+/*
+This gives the text for the links at the bottom of the page a font family of Caribbean, font size of 30px, uppercase letters, a text color of antiquewhite, 10px of padding on all sides, a 2px outset border with a color fo antique white, relative positioning, a div width of 445px, and a black box shadow of 10px on the outside of the border. 
+*/
+.linkText{
+    font-family: Caribbean;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: antiquewhite;
+    padding: 10px;
+    border: 2px outset;
+    border-color: antiquewhite;
+    position: relative;
+    width: 445px;
+    box-shadow: 0 0 10px black;
+}
+/*
+This gives the list that emcompasses the links on the bottom no style type so there will be no formal "list" a margin of 50px on the top and no padding.
+*/
+.linksList{
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 0;
+}
+/*
+This gives each individual link relative positioning, aligns them vertically along the padding, a width of 30% of the page, 2% of the page is a margin on the left, and an antique white 2px ouutset border on each link box.
+*/
+.links{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    border: 2px outset;
+    border-color: antiquewhite;
+    
+}
+/*
+The entire link container have -220px of margin on the top.
+*/
+.linkContainer{
+    margin-top: -220px;
+}
+/*
+This gives the pictures within the bottom links on the main page a top margin of 20px, left margin of 30px, and  a black box shadow of 50px on the outside of the border.
+*/
+.mainPics{
+    margin: 20px 0px 0px 30px;
+    box-shadow: 0 0 50px black;  
+}
+/*
+This gives this picture of width and height of 300px.
+*/
+#ritz{
+    width: 300px;
+    height: 300px;
+}
+/*
+This is so when you hover over each link at the bottom, the background color become navajo white, the cursor becomes a pointer and the height of the color change is 408px.
+*/
+.links:hover .overlay{
+     background-color: navajowhite;
+    cursor: pointer;
+    height: 408px;
+}
+/*
+This is the text in each of the links on the bottom have a white color, font family of Caribbean, uppercase letters, is aligned in the center of the div, and 15px of padding on the bottom.
+*/ 
+.links .overlay .name{
+    color: #fff;
+    font-family: Caribbean;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 15px;
+}
+/*
+Gives this picture an absolute positioning, height of 315px and width of 290px.
+*/
+.picturea{
+    position: absolute;
+    height: 315px;
+    width: 290px;
+}
+/*
+Gives this picture absolute positioning, height of 315px, width of 580px, and margin of 290px on the left.
+*/
+.pictureb{
+    position: absolute;
+    height: 315px;
+    width: 580px;
+    margin-left: 290px;
+}
+/*
+Gives this picture an absolute positioning, height of 315px and width of 290px, and a margin of 870px on the left.
+*/
+.picturec{
+    position: absolute;
+    height: 315px;
+    width: 290px;
+    margin-left: 870px;
+}
+/*
+Gives the intro text on this page a font size of 90px, absolute position, aligns the text in the center of the div, a line height of 315px to align the text vertically in the middle, font family of Caribbean, a text color of brown, div width of 100% of the page, and a z index of 2 to assist with which element is on top of another. This over the ".intoTextback" class element.
+*/
+.introText{
+    font-size: 90px;
+    position: absolute;
+    text-align: center;
+    line-height: 315px;
+    font-family: Caribbean;
+    color: brown;
+    width: 100%;
+    z-index: 2;
+    }       
+/*
+The background of the intro text has a width of 100% of the page, height of 315px, a white color, relative positioning, an opacity of 50%, and z index of 1 to assist with which element is on top of one another. This is "below" the ".intoText" class element.
+*/    
+.introTextback{
+    width: 100%;
+    height: 315px;
+    background-color: white;
+    position: relative;
+    opacity: .5;
+    z-index: 1;
+}
+/*
+This gives the Beginning title a font family of Caribbean, font size of 40px, an antique white 2px outset border, a 810px margin on the right, 20px margin on left, 10px of padding on all sides, text color of brown, absolute positioning, and a black 10px box shadow outside of the border and a width of 355px and aligns the text in the center of the div.
+*/
+#beg{
+    font-family: Caribbean;
+    font-size: 40px;
+    border: 2px outset;
+    border-color: antiquewhite;
+    margin: 0px 810px 0px 20px;
+    padding: 10px;
+    color: brown;
+    position: absolute;
+    box-shadow: 0 0 10px black;
+    width: 355px;
+    text-align: center;
+}
+/*
+This gives all the history texts 40px of top padding, 500px of right padding, 30px of left padding, a text color of black, a div width of 730px, absolute positioning, and a font family of Lora.
+*/    
+.historyInfo{
+    margin: 40px 500px 0px 30px;
+    color: black;
+    width: 730px;
+    position: absolute;
+    font-family: Lora;
+}
+/*
+Gives all the photos on the history page a width of 400px, height of 225px, relative positioning, 25px of top margin, and 780px of left margin.
+*/
+.historyPhotos{
+    width: 400px;
+    height: 225px;
+    position: relative;
+    margin: 25px 0px 0px 780px;
+}
+/*
+This gives the Drake history title a font family of Caribbean, font size of 40px, an antique white 2px outset border, a 700px margin on the right, 20px margin on left, 10px of padding on all sides, text color of brown, absolute positioning, and a black 10px box shadow outside of the border and a width of 465px and aligns the text in the center of the div.
+*/
+#drake{
+    font-family: Caribbean;
+    font-size: 40px;
+    border: 2px outset;
+    border-color: antiquewhite;
+    margin: 0px 700px 0px 20px;
+    padding: 10px;
+    color: brown;
+    position: absolute;
+    box-shadow: 0 0 10px black;
+    width: 465px;
+    text-align: center;
+}
+/*
+This gives the Bodden history title a font family of Caribbean, font size of 40px, an antique white 2px outset border, 10px of padding on all sides, 20px margin on left, text color of brown, absolute positioning, and a black 10px box shadow outside of the border and a width of 710px and aligns the text in the center of the div.
+*/
+#bodden{
+    font-family: Caribbean;
+    font-size: 40px;
+    border: 2px outset;
+    border-color: antiquewhite;
+    padding: 10px;
+    margin-left: 20px;
+    color: brown;
+    position: absolute;
+    box-shadow: 0 0 10px black;
+    width: 710px;
+    text-align: center;
+}
+/*
+This gives all the history content of the page a top margin of -450px.
+*/
+.historyContent{
+    margin-top: -450px;
+}
+/*
+Gives the wave design a width of 400px, height of 85px, relative positioning, a top margin of -10px, and a left margin of 790px.
+*/
+.wave{
+    width: 400px;
+    height: 85px;
+    position: relative;
+    margin: -10px 0px 0px 790px;
+}
+/*
+This gives the first hotel container a top margin of -425px, bottom margin of 8px, left margin of 55px, width of 300px, height of 600px, an antiquewhite 2px outset border, 4px of top padding, 10px of padding on the right, bottom, and left, relative positioning, and a black 10px box shadow outside of the border.
+*/
+.hotel1{
+    margin: -425px 0px 8px 55px;
+    width: 300px;
+    height: 610px;
+    border: 2px outset;
+    border-color: antiquewhite;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 0 10px black;
+    display: inline-block;
+}
+/*
+This gives this hotel title a font size of 20px, aligns the text in the center, relative positioning, a font family of Caribbean, and a font color of brown.
+*/
+.hotel1 h1{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    font-family: Caribbean;
+    color: brown;
+}
+/*
+This turns all of the hotel titles a text color of rosybrown when hovered over.
+*/
+.hotelContainer h1:hover{
+    color: rosybrown;
+}
+/*
+This gives the line design relative positioning, 100% of the width of the page, and a top margin of -250px.
+*/
+#line{
+    position: relative;
+    width: 100%;
+    margin-top: -250px;
+}
+/*
+Gives this picture a width of 300px.
+*/
+#ritz2{
+    width: 300px;
+}
+/*
+Gives all of the groups of hotel text a font family of Lora, font size of 15px, 10px of padding on the top, and 5px of padding on the left.
+*/
+.hoteltext{
+    font-family: Lora;
+    font-size: 15px;
+    padding: 10px 0px 0px 5px;
+}
+/*
+This gives the second hotel element a top margin of -627px, left margin of 440px, width of 100px, height of 550px, an antique white 2px outset border, 1px of top padding, 64px of bottom padding 10px of padding on the right and leftt, absolute positioning, and a black 10px box shadow outside of the border.
+*/
+.hotel2{
+    margin: -637px 0px 0px 440px;
+    width: 300px;
+    height: 560px;
+    border: 2px outset;
+    border-color: antiquewhite;
+    padding: 1px 10px 64px 10px;
+    position: absolute;
+    box-shadow: 0 0 10px black;
+}
+/*
+This gives the second hotel title a font size of 19px, a bottom margin of 21px, aligns the text in the center of the div, relative positioning, font family of Carribean, and a text color of brown.
+*/
+.hotel2 h1{
+    font-size: 19px;
+    margin-bottom: 21px;
+    text-align: center;
+    position: relative;
+    font-family: Caribbean;
+    color: brown;
+}
+/*
+This gives a background color of sky blue to the navigation bar icon of the page that you are currently on.
+*/
+.navClick{
+    background-color: skyblue;
+}
+/*
+This give each hotel picture a width of 300px and a height of 150px.
+*/
+.hotelPics{
+    width: 300px;
+    height: 150px;    
+}
+/*
+This gives the third hotel element a width of 300px, an antique white 2px outset border, 10px of padding on the left and right, 28px bottom padding, absolute positoning, -627px of top margin, 824px of left margin, and a black 10px box shadow outside of the border.
+*/
+.hotel3{
+    width: 300px;
+    border: 2px outset;
+    border-color: antiquewhite;
+    padding: 0px 10px 28px 10px;
+    position: absolute;
+    margin: -635px 0px 0px 824px;
+    box-shadow: 0 0 10px black;
+    height: 597px;
+}
+/*
+This gives the third hotel title a font size of 20px, aligns the text in the center of the div, relative positioning, a font family of Caribbean, and a brown font color.
+*/
+.hotel3 h1{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    font-family: Caribbean;
+    color: brown;
+}
+/*
+Gives the Grand Cayman title a font family of Caribbean, aligns the text in the center of the div, brown text color, an antique white 2px outset border, div width of 700px, "margin: 0 auto" to align the content in the middle of the entire page, 10px of padding on all sides, a top margin of -100px, font size of 60px, and a black 10px box shadow outside of the border.
+*/
+.islands h1{
+    font-family: Caribbean;
+    text-align: center;
+    color: brown;
+    border: 2px outset;
+    border-color: antiquewhite;
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: -100px;
+    font-size: 60px;
+    box-shadow: 0 0 10px black;
+}
+/*
+Gives this photo a width of 700px.
+*/
+#bracc{
+    width: 700px;
+}
+/*
+Gives the Grand Cayman section a relative positioning, and a top margin of -450px.
+*/
+.grandCayman{
+    position: relative;
+    margin-top: -450px;
+}
+/*
+Gives this photo a width of 100% of the page, height of 400px, a top margin of 20px, relative positioning, and a black 2px solid border.
+*/
+#gc{
+   width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    position: relative;
+    border: 2px solid;
+    border-color: black;
+    
+}
+/*
+Makes so there are square bullet points before each point
+*/
+li{
+    list-style-type: square;
+}
+/*
+Gives the starting text for Grand Cayman a font family of Lora, relative positioning, a width of 60% of the page, font size of 13px, "margin: 0 auto" to center the content on the page, top margin of -315px, and a text color of black.
+*/
+#begText1{
+    font-family: Lora;
+    position: relative;
+    width: 60%;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: -315px;
+    color: black;
+}
+/*
+Gives a background color of white, opacity of 60%, width of 60% of the page, height of 300px, "margin: 0 auto" to center the content on the page, top margin of -380px, relative positioning, top and bottom padding of 20px, left and right padding of 33px, and a black 2px solid border.
+*/
+#transBox1{
+    background-color: white;
+    opacity: .6;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: -380px;
+    position: relative;
+    padding: 20px 33px;
+    border: 2px solid;
+    border-color: black;
+}
+/*
+Gives each list item a top and bottom padding of 5px.
+*/
+.destlist{
+    padding: 5px 0px;
+}
+/*
+Gives the 4 square Grand Cayman pics a width of 24% of the page, top margin of 52px, left margin of 3.5px, and a black 2px solid border.
+*/
+.gcpics{
+    width: 24%;
+    margin: 52px 0px 0px 3.5px;
+    border: 2px solid;
+    border-color: black;
+}
+/*
+Gives the Cayman Brac title a font family of Caribbean, aligns the text in the center of the div, brown text color, an antique white 2px outset border, div width of 300px, "margin: 0 auto" to align the content in the middle of the entire page, 10px of padding on all sides, a top margin of 20px, and a black 10px box shadow outside of the border.
+*/
+.caymanBrac h1{
+    font-family: Caribbean;
+    text-align: center;
+    color: brown;
+    border: 2px outset;
+    border-color: antiquewhite;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px black;
+}
+/*
+Gives the starting text for Cayman Brac a font family of Lora, relative positoning, a width of 60% of the page, font size of 13px, "margin: 0 auto" to align the content in the middle of the entire page, a top margin of -370px, and a text color of black.
+*/
+#begText2{
+    font-family: Lora;
+    position: relative;
+    width: 60%;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: -370px;
+    color: black;
+}
+/*
+Gives this picture a width of 100% of the page, a top margin of 23px, height of 450px, and a black 2px solid border.
+*/
+#brac{
+    width: 100%;
+    margin-top: 23px;
+    height: 450px;
+    border: 2px solid;
+    border-color: black;
+}
+/*
+Gives the white transperant box a color of white, opacity of .6, width of 60% of entire page, height of 350px, "margin: 0 auto" to align content in middle of page, a top margin of -430px, relative positoning, 20px of top and bottom padding, 33px of right and left padding, and a black 2px solid border.
+*/
+#transBox2{
+    background-color: white;
+    opacity: .6;
+    width: 60%;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: -430px;
+    position: relative;
+    padding: 20px 33px;
+    border: 2px solid;
+    border-color: black; 
+}
+/*
+Gives this white transperant box a color of white, opacity of .75, width of 60% of entire page, height of 350px, "margin: 0 auto" to align content in middle of page, a top margin of -430px, relative positoning, 20px of top and bottom padding, 33px of right and left padding, and a black 2px solid border.
+*/
+#transBox3{
+    background-color: white;
+    opacity: .75;
+    width: 60%;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: -430px;
+    position: relative;
+    padding: 20px 33px;
+    border: 2px solid;
+    border-color: black; 
+}
+/*
+Gives a top margin of 120px to the Little Cayman content.
+*/
+.littleCayman{
+    margin-top: 120px;
+}
+/*
+Gives this photo a width of 100% of the page, a top margin of 23px, a height of 450px, and a black 2px outset border.
+*/
+#little{
+    width: 100%;
+    margin-top: 23px;
+    height: 450px;
+    border: 2px outset;
+    border-color: black;
+}
+/*
+Gives the first resturant title a top margin of -470px, left margin of 370px, absolute positioning, font family of Caribbean, aligns text in the center of the div, div width of 475px, a text color of brown, an antique white 2px outset border, 10px of padding on all sides, and a 10px black box shadow outside of the border.
+*/
+.restTitle{
+    margin: -470px 0px 0px 370px;
+    position: absolute;
+    font-family: Caribbean;
+    text-align: center;
+    width: 475px;
+    color: brown;
+    border: 2px outset;
+    border-color: antiquewhite;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+/*
+Makes it so when you hover over the title, the text turns rosy brown.
+*/ 
+.restTitle:hover{
+    color: rosybrown;
+}
+/*
+Gives this image absolute positioning, a top margin of -395px, left margin of 50px, a height of 250px, width of 400px, and a black 5px solid border.
+*/
+.restPic{
+    position: absolute;
+    margin: -395px 0px 0px 50px;
+    height: 250px;
+    width: 400px;
+    border: 5px solid;
+    border-color: black;
+}
+/*
+Gives this text absolute positioning, a top margin of -385px, left margin of 500px, a div width of 600px, font family Lora and font size of 14px.
+*/
+#wharfText{
+    position: absolute;
+    margin: -385px 0px 0px 500px;
+    width: 600px;
+    font-family: Lora;
+    font-size: 14px;
+}
+/*
+Gives the different sections of the resturant text a padding of 10px on all sides.
+*/
+.restText{
+    padding: 10px;
+}
+/*
+Gives these pictures a width of 45% of the page, height of 250px, top margin of -120px, left margin of 32px, and a black 5px solid border.
+*/
+.wharfPics{
+    width: 45%;
+    height: 250px;
+    margin: -120px 0px 0px 32px;
+    border: 5px solid;
+    border-color: black;
+}
+/*
+Gives the second restuarant title a relative positioning, font family of Caribbean, text color of brown, an antique white 2px outset border, 10px of padding on all sides, top margin of 30px, left margin of 370px, a div width of 505px, black box shadow of 10px outside the border, and aligns the text in the center of the div.
+*/
+.restTitle2{
+    position: relative;
+    font-family: Caribbean;
+    color: brown;
+    border: 2px outset;
+    border-color: antiquewhite;
+    padding: 10px;
+    margin: 30px 0px 0px 370px;
+    width: 505px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+/*
+Makes it so when you hover over the title, the text turns rosy brown.
+*/
+.restTitle2:hover{
+    color: rosybrown;
+}
+/*
+Give a top margin of 18px to the second restuarant's text
+*/
+.restText2{
+    margin-top: 18px;
+}
+/*
+Gives the sections of the second resturant's text a width of 60% of the page, a left margin of 50px, 10px of padding on all sides, font family of Lora and font size of 14px.
+*/
+.copperText{
+    width: 60%;
+    margin-left: 50px;
+    padding: 10px;
+    font-family: Lora;
+    font-size: 14px;
+}
+/*
+Gives this picture a relative positioning, width of 400px, top margin of -440px, bottom margin of 35px, left margin of 790px, a black 5px solid border, and a height of 150px.
+*/
+#copper1{
+    position: relative;
+    width: 400px;
+    margin: -440px 0px 35px 790px;
+    border: 5px solid;
+    border-color: black;
+    height: 150px;
+}
+/*
+Gives these pictures a width of 45% of the page, height of 250px, a left margin of 32px, and a black 5px solid border.
+*/
+.copperPics{
+    width: 45%;
+    height: 250px;
+    margin-left: 32px;
+    border: 5px solid;
+    border-color: black;
+}
+/*
+Gives the third restuarnt title a relative positioning, font family of Caribbean, a text color of brown, an antique white 2px outset border, 10px of padding on all sides, top margin of 30px, left margin of 370px, div width of 540px, a black 10px box shadow outside of the border, and aligns the text in the center of the div.
+*/
+.restTitle3{
+    position: relative;
+    font-family: Caribbean;
+    color: brown;
+    border: 2px outset;
+    border-color: antiquewhite;
+    padding: 10px;
+    margin: 30px 0px 0px 370px;
+    width: 540px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+/*
+Gives the title a rosy brown text color when hovered over.
+*/
+.restTitle3:hover{
+    color: rosybrown;
+}
+/*
+Gives this picture relative positioning, a width of 400px, top margin of 30px, bottom margin of 10px, left margin of 40px, and a black 5px solid border.
+*/
+.restPic3{
+    position: relative;
+    width: 400px;
+    margin: 30px 0px 10px 40px;
+    border: 5px solid;
+    border-color: black;
+}
+/*
+Gives this text 16px of padding on all sides, and a font size of 11.5px.
+*/ 
+.restTextspecial{
+    padding: 16px;
+    font-size: 11.5px;
+/*
+Gives the entire text for the third restaurant absolute positioning, top margin of -290px, left margin of 500px, div width of 600px, font family of Lora, and a font size of 14px.
+*/        
+}
+#lighthouseText{
+    position: absolute;
+    margin: -290px 0px 0px 500px;
+    width: 600px;
+    font-family: Lora;
+    font-size: 14px;
+}
+/*
+Gives these pictures for the third restuarant a wdith of 45% of the age, height of 250px, top margin of 15px, bottom margin of 10px, and left margin of 32px, a black 5px solid border, and relative positioning.
+*/
+.lighthousePics{
+    width: 45%;
+    height: 250px;
+    margin: 15px 0px 10px 32px;
+    border: 5px solid;
+    border-color: black;
+    position: relative;
+}
+/*
+Gives this picture a width and height of 100% of the div surrounding it and absolute positioning.
+*/
+.moreInfoPic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/*
+Gives each individual input box relative positioning, a top margin of 10px, a right margin of 90% of the page, bottom margin of 24px, and a left margin of 10% of the page.
+*/
+.inputBox{
+    position: relative;
+    margin: 10px 90% 24px 10%;
+}
+/*
+Gives the entire content of the form a font family of Lora, top margin of 40px, left margin of 30px, relative positioning, a width of 25% of the entire page, an antique white 2px solid border, and 10px of padding on all sides, and a text color of black.
+*/
+.form{
+    font-family: Lora;
+    margin: 40px 0px 0px 30px;
+    position: relative;
+    width: 25%;
+    border: 2px solid;
+    border-color: antiquewhite;
+    padding: 10px;
+    color: black;
+}
+/*
+Gives just the input part of the form a top margin of 20px, bolded font, and left padding of 20px.
+*/
+.forms{
+    margin-top: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+/*
+Gives each of the individual four pictues on the More Info page, a width of 400px, height of 300px, margin of 5px on all sides, a black 3px solid border, and a black 10px box shadow outside of the border.
+*/
+.infoPics{
+    width: 400px;
+    height: 300px;
+    margin: 5px;
+    border: 3px solid;
+    border-color: black;
+    box-shadow: 0 0 10px black;
+        
+}
+/*
+Gives the entire picture grid relative positioning, top marging of -655px, bottom margin of 40px, and a left margin of 360px.
+*/
+.infoGrid{
+    position: relative;
+    margin: -655px 0px 40px 360px;
+}
+/*
+Gives the entire main content of the More Info page a top margin of -20px.
+*/
+.formContainer{
+    margin-top: -20px;
+}

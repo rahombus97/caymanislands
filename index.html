@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <title>Cayman Islands Tourist Information</title>
+        <script src="js/jquery-2.2.2.js"></script>     
+    </head>
+    <body>
+        <div class="container">
+            <div id="navBarContainer">
+                <div class="logoContainer">
+                    <a href="index.html"><img src="images/tourism_logo.jpg" id="logoImage"></a> 
+                </div>
+                <div class="navLinksContainer">
+                    <ul>
+                        <a href="index2.html">
+                            <li>History</li>
+                        </a> 
+                        <a href="index3.html">
+                            <li>Hotels</li>
+                        </a>
+                        <a href="index4.html">
+                            <li>Destinations</li>
+                        </a>
+                        <a href="index5.html">
+                            <li>Restaurants</li>
+                        </a>
+                        <a href="index6.html">
+                            <li>Request Info</li>
+                        </a>    
+                    </ul>
+                </div>
+            </div>
+            <div class="intro">
+                <img src="images/tree.jpg" id="tree">
+                <img src="images/drink.jpg" id="drink">    
+                <h1 class="welcome1">Welcome to the Cayman Islands!</h1>
+                    <div class="movie">
+                    <iframe width="1160" height="315" src="https://www.youtube.com/embed/FqsoiAF1SDc?autoplay=1;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </div>    
+            </div>
+                <img src="images/line.svg" id="line">
+            <div id="mainpageContainer">
+                <h1 class="headerText">The Jewel of the Caribbean!</h1>
+                    <div class="mainpageText">The Cayman Islands are 3 islands that compose up of a British Crown Colony in the Caribbean Sea. These islands include Grand Cayman, Cayman Brac, and Little Cayman. They lie in the Caribbean Sea and their warm tropical ambiance draws tourists to their shores. Disocover the beautiful beaches and crystal seas that will draw you into the lust of this enchantful place! Various 5 star hotels such as the Ritz Carlton and The Caribbean Club are located throughout the islands! Exotic and divine Caribbean foods are available at our classy establishments from early in the morning till late at night! Come visit today! It's paradise!</div>
+                <div class="fadein">
+                    <img src="images/04.jpg" class="photo">
+                    <img src="images/09.jpg" class="photo">
+                    <img src="images/10.jpg" class="photo">
+                    <img src="images/11.jpg" class="photo">
+                </div> 
+        <script>      
+        $(function(){
+        $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein :first-child').fadeOut(1500).next('img').fadeIn(1500).end().appendTo('.fadein');}, 
+      3000);
+    
+});
+                </script> 
+        <div class="linkContainer">        
+            <div class="linkText">Travel Information:</div>    
+                
+                <ul class="linksList">
+                    
+                    <li class="links">
+                        <a href="index3.html">
+                        <div class="overlay">
+                            <img src="images/ritz.jpg" class="mainPics" id="ritz">
+                            <h2 class="name">Hotels</h2></a>
+                        </div>
+                    </li>
+                    
+                    <li class="links">
+                        <a href="index4.html">
+                        <div class="overlay">
+                        <img src="images/grand-cayman.jpg" class="mainPics">
+                            <h2 class="name">Destinations</h2></a>
+                        </div>
+                    </li>
+                    
+                    <li class="links">
+                        <a href="index5.html">
+                        <div class="overlay">
+                        <img src="images/restuarant.jpg" class="mainPics">
+                            <h2 class="name">Restaurants</h2></a>
+                        </div>
+                    </li>  
+                </ul>  
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
